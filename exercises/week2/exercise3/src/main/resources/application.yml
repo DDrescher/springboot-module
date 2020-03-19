@@ -1,0 +1,9 @@
+emergency.number:
+  fire: 122
+  police: 133
+  general: 911
+emergency.name:
+  fire : fire
+  police: police
+  general: general
+

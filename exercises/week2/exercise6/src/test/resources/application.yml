@@ -1,0 +1,13 @@
+cinema:
+  specialoffer:
+    defaultMessage: Hello --name--! How
+    templates:
+      - name: Mr.
+        keyword: male
+        message: Good day --name--, don’t
+      - name: Ms.
+        keyword: female
+        message: Dear --name--, you
+      - name: Threepwood
+        keyword: privileged
+        message: My dearest --name--, your

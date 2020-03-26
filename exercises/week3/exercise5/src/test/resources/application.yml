@@ -1,0 +1,11 @@
+server:
+  port: 8080
+music:
+  songs:
+    - name: Windowscene
+      genre: Electronic
+    - name:  Si Un Jour
+      genre: Psychedelic Rock
+    - name: Chan Chan
+      genre: Son
+

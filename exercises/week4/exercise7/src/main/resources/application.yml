@@ -1,0 +1,3 @@
+server:
+  port: 9000
+urlWiz: http://localhost:9001/wizard

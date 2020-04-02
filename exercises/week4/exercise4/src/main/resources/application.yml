@@ -1,0 +1,4 @@
+server:
+  port: 9000
+addresses:
+  urlPolo: localhost:9001

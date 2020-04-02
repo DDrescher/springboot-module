@@ -1,0 +1,3 @@
+server:
+  port: 9001
+urlHome: http://localhost:9002/home

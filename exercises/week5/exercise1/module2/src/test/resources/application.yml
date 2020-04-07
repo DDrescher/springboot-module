@@ -1,0 +1,6 @@
+lib:
+  tailoredRecommendations:
+    - userUuid: "123abc"
+      movie:
+        title: "jack"
+        synopsis: "jacko"

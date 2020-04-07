@@ -1,0 +1,7 @@
+lib:
+  library:
+    - title: "The Matrix"
+      synopsis: "Neo (Keanu Reeves)"
+    - title: "Inception"
+      synopsis: "Cobb's"
+url: "/movies"

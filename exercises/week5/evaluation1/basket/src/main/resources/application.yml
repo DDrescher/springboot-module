@@ -1,0 +1,6 @@
+server:
+  port: 9000
+shipping:
+  price: 2.5
+url:
+  user: http://localhost:9001/users/

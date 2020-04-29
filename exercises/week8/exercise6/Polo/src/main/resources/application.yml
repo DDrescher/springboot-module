@@ -1,0 +1,9 @@
+server:
+  port: 9001
+addresses:
+  urlPolo: localhost:9000
+spring:
+  security:
+    user:
+      name: marcopolo
+      password: marcopolo

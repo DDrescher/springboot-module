@@ -1,0 +1,7 @@
+server:
+  port: 9000
+entities:
+  homeText: "Online Language School."
+  availableLang: "Our available languages are German and English."
+  german: "Willkommen."
+  english: "Welcome."

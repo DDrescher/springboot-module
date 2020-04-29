@@ -1,0 +1,10 @@
+server:
+  port: 8200
+spring:
+  security:
+    user:
+      name: MadameD
+      password: boywithapple
+entities:
+  TextForLobby: "Welcome to the hotel"
+  TextForRoom: "Welcome to your room"

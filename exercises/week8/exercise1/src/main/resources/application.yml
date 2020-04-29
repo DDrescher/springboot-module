@@ -1,0 +1,9 @@
+server:
+  port: 8080
+entities:
+  text: "One Thousand and One Nights."
+spring:
+  security:
+    user:
+      name: alibaba
+      password: opensesame

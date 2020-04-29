@@ -1,0 +1,8 @@
+server:
+  port: 9999
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/mysterious-secret-order
+entiities:
+  messageForNoseyFolks: "im am defeated, my nation is in ruins, my capital a sea of flames, my armies dust, my body a wreck and my mind, finally set free (6 more weeks backend yaaaay)"

@@ -33,13 +33,13 @@ public class InvoiceService {
         Optional<Patient> patientRaw = patientRepository.findByuuid(patientDTO.getUuid());
         if (patientRaw.isPresent()) {
             Patient patient = patientRaw.get();
-            Invoice invoice = new Invoice();
-            invoice.setPaid(false);
-            invoice.setCost(90);
-            invoice.setPatient(patient);
+            Invoice invoice = new Invoice(90, false, patient);
             invoiceRepository.save(invoice);
-            PatientDTO patientDTOReturn = new PatientDTO(patient.getUuid(), patient.getName(), patient.getSymptoms(), patient.getDiagnosis(), patient.getTreatment());
-            return patientDTOReturn;
+            return new PatientDTO(patient.getUuid(),
+                    patient.getName(),
+                    patient.getSymptoms(),
+                    patient.getDiagnosis(),
+                    patient.getTreatment());
         }
         Patient patient = new Patient();
         patient.setUuid(patientDTO.getUuid());
@@ -48,12 +48,9 @@ public class InvoiceService {
         patient.setSymptoms(patientDTO.getSymptoms());
         patient.setTreatment(patientDTO.getTreatment());
         patientRepository.save(patient);
-        Invoice invoice = new Invoice();
-        invoice.setPaid(false);
-        invoice.setCost(90);
-        invoice.setPatient(patient);
+        Invoice invoice = new Invoice(90, false, patient);
         invoiceRepository.save(invoice);
         return patientDTO;
-
+// show el on monday
     }
 }

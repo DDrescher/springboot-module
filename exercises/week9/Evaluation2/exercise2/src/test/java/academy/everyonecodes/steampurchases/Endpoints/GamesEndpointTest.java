@@ -1,5 +1,7 @@
-package academy.everyonecodes.marco.Beans;
+package academy.everyonecodes.steampurchases.Endpoints;
 
+import academy.everyonecodes.steampurchases.Beans.SteamService;
+import academy.everyonecodes.steampurchases.DataClasses.GameData;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,20 +9,20 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 
+import java.util.List;
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class MarcoEndpointTest {
+class GamesEndpointTest {
 
     @Autowired
     TestRestTemplate restTemplate;
-
     @MockBean
-    PoloClient poloClient;
-    String url = "/marco/hello";
+    SteamService steamServices;
+    List<GameData> gameDataList = List.of(new GameData());
 
     @Test
-    void getMessage() {
-        restTemplate.getForObject(url, String.class);
-        Mockito.verify(poloClient).get("hello");
+    void getGames() {
+        restTemplate.getForObject("/games", GameData[].class);
+        Mockito.verify(steamServices).findAllGames();
     }
-
 }

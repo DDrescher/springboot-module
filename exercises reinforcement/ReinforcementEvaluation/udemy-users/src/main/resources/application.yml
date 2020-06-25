@@ -1,0 +1,18 @@
+server:
+  port: 9100
+endpoint:
+  greeting: “Login successful”
+hc:
+  rolestudent: ROLE_STUDENT
+  firstuser:
+    username: instructor
+    password: instructor
+    authorities: ROLE_APP
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/udemy-users?useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update

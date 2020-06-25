@@ -1,0 +1,6 @@
+server:
+  port: 9200
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/registrations

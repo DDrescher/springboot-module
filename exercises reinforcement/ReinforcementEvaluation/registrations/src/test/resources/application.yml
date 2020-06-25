@@ -1,0 +1,12 @@
+server:
+  port: 9200
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/registrations
+ymltestdata:
+  testregistration:
+    udemyusername: testUser
+    coursetitle: testCourse
+    courseuniqueId: testUID
+    courseprice: 123.123
